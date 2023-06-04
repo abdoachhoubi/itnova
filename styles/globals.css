@@ -416,6 +416,41 @@ li {
     margin-bottom: 0.6rem;
   }
 }
+.auth__container .auth__form .form__cta {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1.6rem 8rem;
+  background-color: #fff;
+  color: #000;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  border: 1.5px solid transparent;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 2rem;
+}
+@media screen and (max-width: 1600px) {
+  .auth__container .auth__form .form__cta {
+    padding: 1.4rem 6rem;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .auth__container .auth__form .form__cta {
+    padding: 1.2rem 4rem;
+    font-size: 1rem;
+    margin-top: 0.8rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .auth__container .auth__form .form__cta {
+    padding: 1rem 2rem;
+    font-size: 0.8rem;
+    margin-top: 0.6rem;
+  }
+}
 
 .nav__desktop {
   width: 100vw;

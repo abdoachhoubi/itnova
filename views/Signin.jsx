@@ -58,6 +58,23 @@ const Signin = () => {
           className="form__input"
           placeholder="Password"
         />
+        <motion.button
+          initial={{ opacity: 0, y: "2rem" }}
+          whileInView={{
+            y: 0,
+            opacity: 1,
+            transition: { duration: 1, ease: "easeInOut", delay: 1 },
+          }}
+          whileHover={{
+            border: "1.5px solid #FFFFFF",
+            backgroundColor: "rgba(0,0,0,0)",
+            color: "#FFFFFF",
+            transition: { duration: 0.3, ease: "easeInOut" },
+          }}
+          className="form__cta"
+        >
+          Sign in
+        </motion.button>
       </div>
     </section>
   );
