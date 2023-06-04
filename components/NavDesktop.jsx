@@ -96,7 +96,7 @@ const NavDesktop = () => {
             transition: { duration: 0.3, ease: "easeInOut" },
           }}
         >
-          <Link href="/login">Login</Link>
+          <Link href="/auth?ref=signin">Login</Link>
         </motion.button>
         <motion.button
           className="button__secondary"
@@ -119,7 +119,7 @@ const NavDesktop = () => {
             transition: { duration: 0.3, ease: "easeInOut" },
           }}
         >
-          <Link href="/signup">Sign Up</Link>
+          <Link href="/auth?ref=signup">Sign Up</Link>
         </motion.button>
       </div>
     </nav>

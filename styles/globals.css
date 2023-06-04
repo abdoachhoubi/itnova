@@ -281,6 +281,104 @@ li {
   }
 }
 
+.auth__container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow-x: hidden;
+}
+.auth__container .vector {
+  top: 0;
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.auth__container .auth__section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+}
+.auth__container .auth__section .auth__title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  margin-bottom: 3rem;
+  font-family: "Clash Display", sans-serif;
+}
+@media screen and (max-width: 1600px) {
+  .auth__container .auth__section .auth__title {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .auth__container .auth__section .auth__title {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .auth__container .auth__section .auth__title {
+    font-size: 1rem;
+  }
+}
+.auth__container .auth__section .auth__description {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 4rem;
+  line-height: 1.8;
+}
+@media screen and (max-width: 1600px) {
+  .auth__container .auth__section .auth__description {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .auth__container .auth__section .auth__description {
+    margin-bottom: 1rem;
+  }
+}
+.auth__container .auth__section .auth__cta {
+  padding: 1.6rem 8rem;
+  background-color: #fff;
+  color: #000;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  border: 1.5px solid transparent;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+@media screen and (max-width: 1600px) {
+  .auth__container .auth__section .auth__cta {
+    padding: 1.4rem 6rem;
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .auth__container .auth__section .auth__cta {
+    padding: 1.2rem 4rem;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .auth__container .auth__section .auth__cta {
+    padding: 1rem 2rem;
+    font-size: 0.8rem;
+  }
+}
+
 .nav__desktop {
   width: 100vw;
   height: -moz-fit-content;

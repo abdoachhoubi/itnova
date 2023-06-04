@@ -1,0 +1,66 @@
+.auth__container
+    width: 100vw
+    min-height: 100vh
+    display: flex
+    flex-direction: column
+    align-items: center
+    position: relative
+    overflow-x: hidden
+    .vector
+        top: 0
+        z-index: 0
+        width: 100vw
+        height: 100vh
+        position: fixed
+        object-fit: cover
+    .auth__section
+        position: relative
+        height: 100vh
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: flex-start
+        overflow: hidden
+        .auth__title
+            font-size: 3rem
+            font-weight: 600
+            color: rgba(255, 255, 255, 1)
+            margin-bottom: 3rem
+            font-family: "Clash Display", sans-serif
+            @media screen and ( max-width: $screen__med--width )
+                font-size: 1.4rem
+                margin-bottom: 2rem
+            @media screen and ( max-width: $screen__min--width )
+                font-size: 1.2rem
+            @media screen and ( max-width: $screen__xxs--width )
+                font-size: 1rem
+        .auth__description
+            font-size: 1.2rem
+            font-weight: 500
+            color: rgba(255, 255, 255, .8)
+            margin-bottom: 4rem
+            line-height: 1.8
+            @media screen and ( max-width: $screen__med--width )
+                font-size: 1rem
+                margin-bottom: 3rem
+            @media screen and ( max-width: $screen__xxs--width )
+                margin-bottom: 1rem
+        .auth__cta
+            padding: 1.6rem 8rem
+            background-color: #fff
+            color: #000
+            border-radius: .5rem
+            font-size: 1.2rem
+            border: 1.5px solid transparent
+            outline: none
+            cursor: pointer
+            font-weight: 500
+            @media screen and ( max-width: $screen__med--width )
+                padding: 1.4rem 6rem
+                font-size: 1.1rem
+            @media screen and ( max-width: $screen__min--width )
+                padding: 1.2rem 4rem
+                font-size: 1rem
+            @media screen and ( max-width: $screen__xxs--width )
+                padding: 1rem 2rem
+                font-size: .8rem
