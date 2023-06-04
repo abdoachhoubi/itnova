@@ -378,6 +378,44 @@ li {
     font-size: 0.8rem;
   }
 }
+.auth__container .auth__form {
+  display: flex;
+  flex-direction: column;
+  min-width: 60%;
+}
+.auth__container .auth__form .form__input {
+  width: 100%;
+  padding: 1.2rem 1.6rem;
+  border: none;
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.5);
+  outline: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  background-color: transparent;
+  color: #fff;
+}
+@media screen and (max-width: 1600px) {
+  .auth__container .auth__form .form__input {
+    padding: 1rem 1.4rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .auth__container .auth__form .form__input {
+    padding: 0.8rem 1.2rem;
+    font-size: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .auth__container .auth__form .form__input {
+    padding: 0.6rem 1rem;
+    font-size: 0.6rem;
+    margin-bottom: 0.6rem;
+  }
+}
 
 .nav__desktop {
   width: 100vw;

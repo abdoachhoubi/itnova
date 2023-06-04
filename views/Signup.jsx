@@ -29,6 +29,50 @@ const Signup = () => {
         Sign up today and join a dynamic community of Moroccan tech enthusiasts,
         where innovation, collaboration, and endless possibilities await!
       </motion.p>
+      <div className="auth__form">
+        <motion.input
+          initial={{ opacity: 0, y: "2rem" }}
+          whileInView={{
+            y: 0,
+            opacity: 1,
+            transition: { duration: 1, ease: "easeInOut", delay: 0.6 },
+          }}
+          whileFocus={{ borderBottom: "2px solid #fff" }}
+          type="text"
+          name="username"
+          id="username"
+          className="form__input"
+          placeholder="Full Name"
+        />
+        <motion.input
+          initial={{ opacity: 0, y: "2rem" }}
+          whileInView={{
+            y: 0,
+            opacity: 1,
+            transition: { duration: 1, ease: "easeInOut", delay: 0.8 },
+          }}
+          whileFocus={{ borderBottom: "2px solid #fff" }}
+          type="text"
+          name="email"
+          id="email"
+          className="form__input"
+          placeholder="Email"
+        />
+        <motion.input
+          initial={{ opacity: 0, y: "2rem" }}
+          whileInView={{
+            y: 0,
+            opacity: 1,
+            transition: { duration: 1, ease: "easeInOut", delay: 1 },
+          }}
+          whileFocus={{ borderBottom: "2px solid #fff" }}
+          type="password"
+          name="password"
+          id="password"
+          className="form__input"
+          placeholder="Password"
+        />
+      </div>
     </section>
   );
 };
