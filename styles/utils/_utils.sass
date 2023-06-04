@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&family=Syne:wght@400;500;600;700;800&display=swap')
+@import url('https://api.fontshare.com/v2/css?f[]=general-sans@200,500,300,600,400,700&f[]=clash-display@700,500,600&display=swap" rel="stylesheet')
+@mixin scrollbars()
+    scrollbar-width: auto
+    scrollbar-color: #FFFFFF #000000
+    &::-webkit-scrollbar
+        width: 12px
+        @media screen and ( max-width: 900px )
+            display: none
+            width: 0
+    &::-webkit-scrollbar-track
+        background: #000000
+    &::-webkit-scrollbar-thumb
+        background-color: #FFFFFF
+
+$screen__med--width: 1600px
+$screen__min--width: 1300px
+$screen__xxs--width: 900px
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    @include scrollbars()
+
+body
+    overflow-x: hidden
+    background-color: #000000
+
+p, h1, h2, h3, h4, h5, h6, li, a, button, input, textarea, select, option, label, span, input::placeholder, textarea::placeholder, select::placeholder
+    font-family: 'General Sans', sans-serif
+
+.sora
+    font-family: 'Sora', sans-serif
+
+a
+    text-decoration: none
+    color: inherit
+
+button
+    cursor: pointer
+
+li
+    list-style: none

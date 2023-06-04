@@ -1,0 +1,80 @@
+.nav__desktop
+    width: 100vw
+    height: fit-content
+    padding: 1rem 5vw
+    display: flex
+    justify-content: space-between
+    align-items: center
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 100
+    background-color: rgba(0, 0, 0, 0)
+    backdrop-filter: blur(4px)
+    .nav__title
+        font-size: 1.6rem
+        font-weight: 600
+        color: rgba(255, 255, 255, .8)
+        @media screen and ( max-width: $screen__med--width )
+            font-size: 1.4rem
+        @media screen and ( max-width: $screen__min--width )
+            font-size: 1.2rem
+        @media screen and ( max-width: $screen__xxs--width )
+            font-size: 1rem
+    .nav__list
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .nav__item
+            font-size: 1.1rem
+            font-weight: 500
+            color: rgba(255, 255, 255, .8)
+            cursor: pointer
+            text-transform: uppercase
+            @media screen and ( max-width: $screen__med--width )
+                font-size: 1rem
+            @media screen and ( max-width: $screen__min--width )
+                font-size: .9rem
+            @media screen and ( max-width: $screen__xxs--width )
+                font-size: .8rem
+            &:not(:last-child)
+                margin-right: 6rem
+    .button__group-h
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .button__primary
+            padding: 1rem 4rem
+            border-radius: .5rem
+            font-size: 1.2rem
+            outline: none
+            cursor: pointer
+            font-weight: 500
+            margin-right: 2rem
+            border: none
+            @media screen and ( max-width: $screen__med--width )
+                padding: 1rem 3rem
+                font-size: 1.1rem
+            @media screen and ( max-width: $screen__min--width )
+                font-size: 1rem
+            @media screen and ( max-width: $screen__xxs--width )
+                padding: 1rem 1rem
+                font-size: .8rem
+        .button__secondary
+            padding: 1rem 4rem
+            background-color: transparent
+            color: #FFFFFF
+            border-radius: .5rem
+            font-size: 1.2rem
+            border: 1.5px solid #fff
+            outline: none
+            cursor: pointer
+            font-weight: 500
+            @media screen and ( max-width: $screen__med--width )
+                padding: 1rem 3rem
+                font-size: 1.1rem
+            @media screen and ( max-width: $screen__min--width )
+                font-size: 1rem
+            @media screen and ( max-width: $screen__xxs--width )
+                padding: 1rem 1rem
+                font-size: .8rem
